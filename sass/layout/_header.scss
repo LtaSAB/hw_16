@@ -1,0 +1,134 @@
+.h-page {
+  color: $nav-color;
+  font-weight: 400;
+  @include prefix(background-size, cover, o moz webkit);
+  .container-fluid {
+      padding: 0 25px;
+      form {
+        position: relative;
+        margin-top: 10px;
+        margin-left: 5%;
+        float: left;
+        input {
+          outline: none;
+          border: none;
+        }
+        input[type="search"] {
+          background-color: rgba(104, 95, 83, 0.25);
+          -webkit-appearance: none;
+          min-width: 200px;
+          height: 35px;
+          @include prefix(border-radius, 2px, o moz webkit);
+          padding: 0 15px;
+          @include prefix(input-placeholder, rgba(255, 255, 255, 0.25), moz webkit ms);
+        }
+        input[type="image"] {
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          margin-top: -10px;
+        }
+      }
+    }
+    nav {
+      position: relative;
+      z-index: 99;
+      ul {
+        list-style-type: none;
+        font-size: 1.5em;
+        li {
+          a:hover+.upper-menu {
+            display: block;
+          }
+          .upper-menu {
+            display: none;
+            &>li {
+              width: 50%;
+              float: left;
+              padding: 20px 30px 40px;
+			  white-space: nowrap;
+			  text-overflow: ellipsis;
+			  overflow: hidden;
+              ul {
+                li {
+                  padding: 10px 0;
+                  border-bottom: 1px solid rgba(75, 115, 99, 1);
+                  font-size: $main-font-size;
+                  @media screen and (min-width:$md-width) {
+                    padding: 5px 0;
+                    border-bottom:0;
+                  }
+                }
+              }
+            }
+          }
+          a {
+
+          }
+        }
+      }
+      .nav-btn {
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        left: -45px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 9px 10px;
+
+        &:hover {
+          background-color: rgba(104, 95, 83, 1);
+          left: -35px;
+
+          & + ul {
+            display: block !important;
+            position: fixed;
+            top: 50px;
+            left: -20px;
+            z-index: 9999;
+            width: 100%;
+
+            &>li{
+              &>a{
+                width: 100%;
+                height: 100%;
+                display: block;
+                background-image: linear-gradient(to right bottom, rgba(104, 95, 83, 1), rgba(80, 55, 33, 1)) ;
+                padding: 10px 40px;
+                border-bottom: 1px solid rgba(75, 115, 99, 1);
+              }
+              &:last-child a{
+                border-radius:  0 0 10px 0 ;
+              }
+            }
+          }
+        }
+        span {
+          background-color: #888;
+          display: block;
+          width: 22px;
+          height: 2px;
+          border-radius: 1px;
+          & + span {
+            margin-top: 4px;
+          }
+        }
+      }
+    }
+    .fa-shopping-cart {
+      font-size: 32px;
+      opacity: 0.25;
+      float: right;
+      padding: 10px 15px 10px 10px;
+      &:hover {
+        color: #dfad00;
+        opacity: 0.8;
+        transform: scale(1.2);
+      }
+    }
+  .slider {
+    .container-fluid {
+      padding: 0;
+    }
+  }
+}

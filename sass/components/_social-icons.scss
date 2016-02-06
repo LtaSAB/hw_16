@@ -1,0 +1,158 @@
+.social-elements {
+  padding-bottom: 40px;
+  .f-page & {
+    margin-top: 30px;
+  }
+  li {
+    vertical-align: middle;
+    a {
+      display: block;
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      color: white;
+      &:hover {
+        background-color: chocolate !important;
+      }
+      .fa {
+        vertical-align: text-bottom;
+      }
+      &.youtube {
+        background-color: #ff0000;
+      }
+      &.circle {
+        background-color: #dbdbdb;
+        span {
+          display: inline-block;
+          width: 8px;
+          height: 8px;
+          background-color: #00abf0;
+          border-radius: 50%;
+          vertical-align: middle;
+          &:first-child {
+            background-color: #2a85e8;
+          }
+          &:last-child {
+            background-color: #f635a3;
+          }
+        }
+      }
+      &.vkontakte {
+        background-color: #41658b;
+        span {
+          vertical-align: middle;
+          font-weight: 500;
+        }
+      }
+      &.odnoklassniki {
+        background-color: #f4960f;
+      }
+      &.facebook {
+        background-color: #41658b;
+      }
+      &.twitter {
+        background-color: #00abf0;
+      }
+    }
+  }
+}
+.social-elements.big-soc-icon{
+  li {
+    width: 40px;
+    height: 40px;
+    a {
+      font-size: 24px;
+      padding-left: 5px;
+    }
+  }
+
+}
+.social-elements.small-soc-icon{
+  li {
+    width: 20px;
+    height: 20px;
+    a {
+      font-size: 12px;
+      padding-left: 3px;
+      &.vkontakte {
+        span {
+          vertical-align: sub;
+        }
+      }
+
+    }
+  }
+}
+.describe-full {
+  .social-share {
+    li {
+      display: inline-block;
+      letter-spacing: 0;
+      white-space: nowrap;
+      padding-right: 5px;
+      dl {
+        dt {
+          margin-right: 5px;
+          min-width: 110px;
+          clear: left;
+          a {
+            padding: 2px 0;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            color: white;
+            border-radius: 2px;
+            span {
+              padding: 0 5px;
+            }
+            &.vkontakte-share {
+              background-color: #6486aa;
+              span {
+                font-weight: 900;
+              }
+            }
+            &.facebook-share {
+              background-color: #3c56a1;
+            }
+            &.twitter-share {
+              background-color: #f4f4f4;
+              color: #333369;
+              border: 1px solid #ccc;
+            }
+            .fa-twitter {
+              color: #05aded;
+            }
+            .fa-facebook-square {
+              color: white;
+            }
+          }
+        }
+        dd {
+          border: 1px solid #ccc;
+          border-radius: 2px;
+          padding: 1px 5px;
+          margin-left: 5px;
+          display: inline-block;
+          font-weight: 300;
+          position: relative;
+          &:before, &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: 4px;
+            left: -11px;
+            border: 5px solid transparent;
+            border-right: 6px solid #bbbfc4;
+          }
+          &:after {
+            left: -10px;
+            border-right: 6px solid white;
+          }
+        }
+      }
+    }
+  }
+}

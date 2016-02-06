@@ -1,0 +1,44 @@
+.send-request {
+  background: url(../img/news-bg.png) no-repeat;
+  @include prefix(background-size, cover, o moz webkit);
+  color: white;
+  padding: 20px 0 45px;
+  text-align: center;
+  h2 {
+    color: white;
+    font-size: 2em;
+  }
+    form {
+      input {
+        width: 230px;
+        height: 40px;
+        padding: 0 15px;
+        color: #afafaf;
+        font-size: 1.5em;
+        border-radius: 3px;
+        border: none;
+        outline: none;
+        margin: 10px 10px 15px 0;
+
+      }
+      .button {
+        outline: none;
+        margin: 10px 10px 15px 0;
+        @media screen and (min-width: $md-width){
+          margin: 10px 0 15px;
+        }
+      }
+    }
+  a.read-more {
+    color: inherit;
+    &:hover {
+      color: $link-color-hover;
+      &:after {
+        border-left: 7px solid chocolate;
+      }
+    }
+    &:after {
+      border-left: 7px solid white;
+    }
+  }
+}

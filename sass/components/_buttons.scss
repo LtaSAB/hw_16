@@ -1,0 +1,82 @@
+@import '../utils/_variables';
+a, button.button {
+  &:after{
+    font-size: 0;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    vertical-align: middle;
+  }
+}
+.button {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #dfad00;
+  box-shadow: 0 2px 0 #ab8500;
+  font-size: 16/12*1em;
+  .send-request &{
+    text-shadow: 0 -1px 0 rgba(171, 133, 0, 0.75);
+    padding: 10px 35px;
+    border-radius: 3px;
+    border: 0;
+    .button {
+      &:hover {
+        color: firebrick;
+        &:after {
+          border-left: 7px solid firebrick;
+        }
+      }
+    }
+  }
+  &:hover {
+    color: firebrick;
+    &:after {
+      border-left: 7px solid firebrick;
+    }
+  }
+  &:after {
+    margin-left: 20px;
+    border-left: 7px solid white;
+  }
+}
+a.read-more {
+  display: inline-block;
+  padding: 5px;
+  color: $read-more-color-link;
+  font-style: italic;
+  .blockquote-sergey &{
+    font-style: normal;
+    color: #4c93c3;
+    &:after {
+      border-left: 7px solid #4c93c3;
+      margin-left: 5px;
+    }
+  }
+  &:hover {
+    color: firebrick;
+    &:after {
+      border-left: 7px solid firebrick;
+    }
+  }
+  &:after {
+    border-left: 7px solid #4c93c3;
+    margin-left: 5px;
+  }
+}
+.buy {
+  display: inline-block;
+  padding: 8px 17px;
+  text-shadow: 0 -1px 0 rgba(171, 133, 0, 0.75);
+  font-size: (16/12)*1em;
+  color: white;
+  background-color: #dfad00;
+  box-shadow: 0 2px 0 #ab8500;
+  &:hover {
+    color: white;
+  }
+  .top-product & {
+    float: right;
+  }
+}

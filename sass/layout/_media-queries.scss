@@ -1,0 +1,364 @@
+@media screen and (min-width:$min-width) and (max-width:$xs-width - (1)){
+
+}
+@media screen and (max-width:$sm-width - (1)){
+  .news {
+    article:nth-child(2n+1) {
+      clear: both;
+    }
+  }
+  .recomended {
+    section {
+      article {
+        &:nth-child(2n+1){
+          clear: both;
+        }
+      }
+    }
+  }
+
+}
+@media screen and (min-width:$xs-width) and (max-width:$sm-width - (1)) {
+  .propositions {
+    section {
+      article {
+        padding: 0 15px 55px;
+        float: left;
+        width: 50%;
+        &:nth-child(even) {
+          padding-right: 0;
+        }
+        &:nth-child(odd) {
+          padding-left: 0;
+        }
+        &:nth-child(2n+1) {
+          clear: both;
+        }
+      }
+    }
+  }
+  .catalog {
+    .left-sidebar {
+    }
+    .right-sidebar {
+    }
+  }
+}
+@media screen and  (min-width: 550px) and (max-width: $md-width - 1){
+  .our-parthner {
+    .parthner-describe {
+      &>li {
+        width: 50%;
+        float: left;
+        padding-right: 10px;
+        &:nth-child(2n) {
+          padding-right: 0;
+        }
+        &:nth-child(2n+1) {
+          clear: both;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 650px) {
+  .blockquote-sergey {
+    .container-fluid{
+      .quote {
+        width: 75%;
+        h2 {
+          q {
+            padding-right: 30%;
+          }
+          span {
+            right: 40%;
+          }
+        }
+      }
+      .sergey-quote {
+        display: block;
+      }
+    }
+  }
+}
+@media screen and (max-width:$md-width - (1)){
+  .flexslider {
+    &:hover {
+      .flex-direction-nav {
+        .flex-prev{
+          left: 0;
+        }
+        .flex-next {
+          right: 0;
+        }
+      }
+    }
+  }
+  .products {
+    text-align: center;
+    .product-icon {
+      img{
+        display: inline-block;
+      }
+    }
+  }
+}
+@media screen and (min-width:$xs-width) and (max-width:$md-width - (1)) {
+
+}
+@media screen and (min-width:$sm-width) and (max-width:$md-width - (1)) {
+  .describe-full {
+    .social-share {
+        text-align: center;
+    }
+  }
+}
+@media screen and (min-width:$sm-width) {
+  .news {
+    article:nth-child(4n+1) {
+      clear: both;
+    }
+  }
+  .catalog {
+    nav.choose-category{
+      ul {
+        li {
+          float: left;
+          a {
+            padding-left: 0 ;
+          }
+        }
+      }
+    }
+    .right-sidebar {
+      section {
+        margin-top: 35px;
+        article {
+          &:nth-child(3n+1) {
+            clear: both;
+          }
+          h3 {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+  .recomended {
+    section {
+      article {
+        &:nth-child(3n+1){
+          clear: both;
+        }
+      }
+    }
+  }
+  .tv-video {
+    .video-section {
+      .group-of-video {
+        margin-top: 0;
+      }
+    }
+    .videos-category {
+      text-align: left;
+    }
+  }
+  .describe-full {
+    h2 {
+      text-align: left;
+    }
+    .product-icon {
+      text-align: left;
+      img {
+        max-width: 100%;
+      }
+    }
+    .product-parameters {
+      margin-top: 0;
+      text-align: left;
+      dl {
+        text-align: left;
+      }
+      .button {
+        margin-bottom: 130px;
+      }
+    }
+  }
+}
+@media screen and (min-width:$md-width) {
+  .h-page {
+    .container-fluid {
+      max-width: 1000px;
+        form {
+          margin-left: 0;
+          input[type="search"] {
+            width: 340px;
+          }
+        }
+        nav {
+          float: left;
+          width: calc(65% - 65px);
+          padding-left: 20px;
+          &>ul {
+            padding-left: 30px;
+            position: relative;
+            &>li {
+              float: left;
+              padding: 15px 20px 15px 0;
+              &:last-child {
+                padding-right: 0;
+              }
+              &:hover>.upper-menu {
+                display: block;
+                position: absolute;
+                z-index:9;
+                top: 55px;
+                left: 0;
+                background: rgba(50, 50,50, 0.65);
+                width: 115%;
+            }
+              .upper-menu {
+                display: none;
+
+              }
+            }
+          }
+        }
+      }
+    }
+  .recomended {
+    nav.choose-category{
+      ul {
+        li {
+          float: left;
+          a {
+            padding-left: 0 ;
+          }
+        }
+      }
+
+    }
+  }
+  .tv-video {
+    .video-top {
+      video {
+        min-height: 350px;
+      }
+    }
+    .group-of-video {
+      article {
+        video {
+          min-height: 170px;
+        }
+      }
+    }
+    .videos-category {
+      ul {
+        li {
+          a {
+            padding: 5px 0;
+          }
+        }
+      }
+    }
+  }
+  .our-parthner {
+    .parthner-describe {
+      &>li {
+        width: 20%;
+        float: left;
+        padding-right: 45px;
+        &:nth-child(5n) {
+          padding-right: 0;
+        }
+        &:nth-child(5n+1) {
+          clear: both;
+        }
+      }
+    }
+  }
+  .send-request {
+    .container-fluid {
+      text-align: left;
+    }
+  }
+  .catalog {
+    .right-sidebar {
+      section {
+        article {
+          &:nth-child(3n+1) {
+            clear: both;
+          }
+        }
+      }
+    }
+  }
+  .f-page {
+    .author {
+      text-align: left;
+      .copyright {
+        display: inline-block;
+        vertical-align: top;
+        width: 33%;
+        &:last-of-type {
+          padding-right: 200px;
+        }
+      }
+      .social-elements {
+        display: inline-block;
+        width: (100/3)*1%;
+        vertical-align: top;
+        margin-top: 0;
+      }
+    }
+  }
+  .propositions {
+    section {
+      article {
+        padding: 0 15px 55px;
+        float: left;
+        width: 20%;
+        &:nth-child(5n+1) {
+          clear: both;
+        }
+      }
+    }
+  }
+  .describe-full {
+    .social-share {
+      li {
+        display: block;
+        float: left;
+        width: (100/3)*1%;
+      }
+    }
+  }
+}
+@media screen and (min-width:$lg-width) {
+  .flexslider {
+    &:hover {
+      .flex-direction-nav {
+        .flex-prev{
+          left: -50px;
+        }
+        .flex-next {
+          right: -50px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1500px) {
+  .flexslider {
+    &:hover {
+      .flex-direction-nav {
+        .flex-prev{
+          left: -100px;
+        }
+        .flex-next {
+          right: -100px;
+        }
+      }
+    }
+  }
+}

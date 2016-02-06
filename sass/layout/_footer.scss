@@ -1,0 +1,27 @@
+.f-page {
+  background-color: #323232;
+  .about-us {
+    padding: 10px 0 5px;
+    color: #969696;
+    li {
+      padding-top: 40px;
+      &:nth-child(odd) {
+        padding-left: 0;
+      }
+      &:nth-child(even) {
+        padding-right: 0;
+      }
+    }
+  }
+  .author {
+    text-align: center;
+    margin-top: 30px;
+    .copyright {
+      font-weight: 400;
+      color: white;
+      &:hover {
+        color: $link-color-hover;
+      }
+    }
+  }
+}

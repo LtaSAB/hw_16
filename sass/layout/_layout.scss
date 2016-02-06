@@ -1,0 +1,103 @@
+@import
+'../utils/_variables',
+'../utils/_mixins';
+
+/* ie hack
+don't remove that style*/
+.m-page {
+  display: block;
+}
+.container-fluid {
+  min-width: $min-width;
+  max-width: $max-width;
+}
+
+.container-fluid:before, .container-fluid:after,
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  display: table;
+}
+.container-fluid:after,
+.clearfix:after {
+  clear: both;
+}
+* {
+  @include prefix(box-sizing, border-box, webkit moz);
+}
+body {
+  color: $main-color;
+  font-family: $main-font;
+  font-size: $main-font-size;
+  font-weight: $main-font-weight;
+}
+.wrapper {
+  overflow: hidden;
+  min-width: $min-width;
+  max-width: 100%;
+  a {
+    text-decoration: $link-text-decoration;
+    color: inherit;
+    transition: $link-transition;
+    outline: none;
+  }
+}
+ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+.h-page {
+  background: url("../img/header-bg.jpg") no-repeat ;
+  .nav-section {
+    background: rgba(50, 50,50, 0.65);
+  }
+}
+.m-page, .f-page {
+  .container-fluid{
+    max-width: 1000px;
+    padding: 0 15px;
+  }
+}
+h2 {
+  font-size: $h2-font-size;
+  font-weight: $h2-font-weight;
+  color: $second-color;
+  .tv-video & {
+    color: white;
+  }
+}
+h3 {
+  font-size: $h3-font-size;
+  color: $main-color;
+  .tv-video & {
+    font-size: 2em;
+    color: white;
+  }
+}
+a:hover {
+  color: $link-color-hover;
+}
+.our-parthner, .propositions, .news {
+  background: url(../img/news-bg.png) no-repeat;
+  @include prefix(background-size, cover, o moz webkit);
+}
+span.price {
+  color: #4c93c3;
+  font-size: (16/12)*1em;
+  font-weight: 900;
+}
+video {
+  width: 100%;
+  border: 5px solid white ;
+}
+.social-elements {
+  li {
+    display: inline-block;
+  }
+}
+.send-request {
+  .container-fluid{
+    padding: 0 15px;
+  }
+}
